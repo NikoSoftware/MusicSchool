@@ -67,6 +67,11 @@
             android:name=".activity.main.UpdateNicknameActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity
+            android:name=".activity.main.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
         <activity
             android:name=".activity.teacher.MusicTeachingActivity"
             android:screenOrientation="portrait"

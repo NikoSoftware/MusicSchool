@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import com.example.niko.musicschool.R;
 import com.example.niko.musicschool.activity.exam.MusicSignUpActivtiy;
 import com.example.niko.musicschool.activity.main.BaseActivity;
+import com.example.niko.musicschool.activity.main.WebViewActivity;
 import com.example.niko.musicschool.activity.order.OrderManageActivity;
 import com.example.niko.musicschool.activity.picture.PictureActivity;
 import com.example.niko.musicschool.activity.teacher.MusicTeachingActivity;
@@ -49,6 +50,14 @@ public class MainContentController extends BaseController {
     private String p3 = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490440855651&di=d041639fc5ac1c13c4430b2143fcdfe4&imgtype=0&src=http%3A%2F%2Fst.depositphotos.com%2F1055089%2F627%2Fv%2F950%2Fdepositphotos_6279700-Green-music-theme.jpg";
 
     private String[] imgs = {p1,p2,p3};
+
+    private String url1 = "https://github.com/NikoSoftware";
+
+    private String url2 = "https://github.com/NikoSoftware/MusicSchool";
+    private String url3 = "https://github.com/NikoSoftware";
+
+    private String[] urls = {url1,url2,url3};
+
     /**
      * 构造器
      *
@@ -108,6 +117,7 @@ public class MainContentController extends BaseController {
             @Override
             public void onBannerItemClick(BGABanner banner, View view, Object model, int position) {
 
+                WebViewActivity.startWebView(mContext,urls[position]);
             }
         });
 
