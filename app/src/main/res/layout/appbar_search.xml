@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/appbar_height"
+                android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/appbar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_8"
+        android:background="@drawable/selector_btn_appbar"
+        android:padding="@dimen/margin_6">
+
+        <ImageView
+            android:id="@+id/appbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/icon_size_24"
+            android:layout_centerInParent="true"
+            android:src="@drawable/selector_btn_back"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/appbar_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_marginRight="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_6"
+        android:layout_toLeftOf="@+id/appbar_right"
+        android:layout_toRightOf="@+id/appbar_left"
+        android:background="@drawable/shape_bg_round_rect_white"
+        android:gravity="center_vertical|left"
+        android:hint="请输入搜索内容"
+        android:imeOptions="actionSearch"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+        android:singleLine="true"
+        android:textColor="@color/text_normal"
+        android:textColorHint="@color/text_right"
+        android:textSize="@dimen/text_size_17"/>
+
+    <RelativeLayout
+        android:id="@+id/appbar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@drawable/selector_btn_appbar"
+        android:padding="@dimen/margin_6">
+
+        <ImageView
+            android:id="@+id/appbar_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/icon_size_24"
+            android:layout_centerInParent="true"
+            android:src="@drawable/selector_btn_search"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

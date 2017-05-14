@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_grade_teacher_info"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/music_sign_item_height"
+        android:orientation="horizontal"
+        android:background="@color/hint_grey"
+        >
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+            android:textSize="@dimen/music_sign_text_size"
+            android:text="指导老师信息"
+            />
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_line_fill" />
+
+    <!--老师姓名   -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/music_sign_item_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal"
+            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+            android:textSize="@dimen/music_sign_text_size"
+            android:text="老师姓名"
+            />
+        <EditText
+            android:id="@+id/et_teach_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/music_sign_text_margin_left"
+            android:background="@null"
+            android:textSize="@dimen/music_sign_text_size"
+            android:textColorHint="@color/hint_text_grey"
+            />
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_line_margin" />
+
+
+    <!--手机号码   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/music_sign_item_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal"
+            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+            android:textSize="@dimen/music_sign_text_size"
+            android:text="手机号码"
+            />
+        <EditText
+            android:id="@+id/et_teach_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/music_sign_text_margin_left"
+            android:background="@null"
+            android:hint=""
+            android:inputType="number"
+            android:maxLength="11"
+            android:textSize="@dimen/music_sign_text_size"
+            android:textColorHint="@color/hint_text_grey"
+            />
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_line_fill" />
+
+
+
+</LinearLayout>

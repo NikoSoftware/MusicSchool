@@ -1,0 +1,43 @@
+<resources>
+
+    <style name="DialogThemeCancel" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="DialogTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="popup_window_item_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_marginRight">8dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ff0676ff</item>
+        <item name="android:textSize">16dip</item>
+    </style>
+
+    <style name="line_light_gray">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.2px</item>
+        <item name="android:background">#ffcccccc</item>
+    </style>
+
+    <style name="PopupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/pop_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_bottom_out</item>
+    </style>
+
+</resources>

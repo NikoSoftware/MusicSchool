@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 底部圆角 白色背景 白色边框 长方体 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#ffffff"/>
+            <corners
+                android:radius="4dip"/>
+            <stroke
+                android:width="4px"
+                android:color="#f0ffffff"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">卓儿音乐学堂</string>
+
+    <!-- permission -->
+    <string name="permission_external_storage">申请读写SD卡权限，缓存图片等资源文件</string>
+    <string name="permission_camera">申请相机权限，进行拍照，设置头像</string>
+    <string name="permission_video">申请摄像头权限，拍摄视频，上传教学资源</string>
+    <string name="permission_location">申请定位权限，筛选周边教学资源</string>
+    <string name="permission_telphone">申请拨打电话权限</string>
+    <!-- recycler view -->
+    <string name="footer_pull_load_normal">上拉加载更多</string>
+    <string name="footer_pull_load_ready">松开加载更多</string>
+    <string name="footer_pull_load_loading">正在加载中...</string>
+    <string name="footer_pull_load_complete">已全部加载完毕</string>
+
+    <string name="payment_hint">*支付成功后，我们将于6月30日前将准考证号等考试相关信息以短信的形式发送到您的手机，并邮寄准考证到您所填写的邮寄地址，请注意查收。</string>
+
+    <!-- about -->
+    <string name="about">卓儿音乐学堂是由黑弧悦音乐文化（北京）有限公司于2016年创建，以持续创造音乐素养及技能教育的IP教程视频为核心，给“相信音乐能为孩子带来丰盈人生”的5岁到12岁乐童家庭，提供一个首家集IP内容、国家级音乐大师和中国音协专业学会论证资质的优质老师、考级参赛APP一键服务、线下互动音乐教室及乐童参演平台的在线O2O的悦教平台。</string>
+    <string name="get_prepayid_fail" formatted="false">获取prepayid失败，原因%s</string>
+
+</resources>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/item_52">
+
+    <RelativeLayout
+        android:id="@+id/view_menu_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="@dimen/margin_56"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16"
+        android:paddingTop="@dimen/margin_56">
+
+        <cn.sanfast.xmutils.bitmap.view.CircleImageView
+            android:id="@+id/civ_menu_avatar"
+            android:layout_width="@dimen/icon_size_64"
+            android:layout_height="@dimen/icon_size_64"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/civ_menu_avatar"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_toRightOf="@+id/civ_menu_avatar"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_18"/>
+
+        <TextView
+            android:id="@+id/tv_user_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/civ_menu_avatar"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_toRightOf="@id/civ_menu_avatar"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_navigation_phone"
+            android:textSize="@dimen/text_size_15"/>
+
+        <ImageView
+            android:layout_width="@dimen/icon_size_22"
+            android:layout_height="@dimen/icon_size_22"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_right_white"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view_menu_item_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/menu_schoolchild"
+            layout="@layout/item_menu"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/margin_56"
+            android:background="@color/line"/>
+
+        <include
+            android:id="@+id/menu_collection"
+            layout="@layout/item_menu"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/margin_56"
+            android:background="@color/line"/>
+
+        <include
+            android:id="@+id/menu_order"
+            layout="@layout/item_menu"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/margin_56"
+            android:background="@color/line"/>
+
+        <include
+            android:id="@+id/menu_sign_in"
+            layout="@layout/item_menu"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_menu_item_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/line"/>
+
+        <include
+            android:id="@+id/menu_wallet"
+            layout="@layout/item_menu"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line"/>
+
+        <include
+            android:id="@+id/menu_address"
+            layout="@layout/item_menu"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/line"/>
+
+        <include
+            android:id="@+id/menu_setting"
+            layout="@layout/item_menu"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line"/>
+
+    </LinearLayout>
+
+</LinearLayout>

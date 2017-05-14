@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.example.niko.musicschool"
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    buildscript {
+        repositories {
+            jcenter()
+        }
+        dependencies {
+        //    classpath 'com.android.tools.build:gradle:1.2.3'
+        }
+    }
+    allprojects {
+
+        repositories {
+            jcenter()
+            //Bmob的maven仓库地址--必填
+            maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
+            maven { url "https://jitpack.io" }
+        }
+    }
+
+
+}
+
+
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:recyclerview-v7:25.1.0'
+    compile 'com.facebook.fresco:fresco:1.0.0'
+    compile 'com.android.support:design:25.1.0'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.7'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'cn.bingoogolapple:bga-banner:2.0.9@aar'
+    compile 'cn.bingoogolapple:bga-refreshlayout:1.1.6@aar'
+    compile 'com.github.jdsjlzx:LRecyclerView:1.4.0'
+    //视频
+    compile 'fm.jiecao:jiecaovideoplayer:5.5.2'
+
+
+    compile project(path: ':xmutils')
+
+
+
+
+    //以下SDK开发者请根据需要自行选择
+    //bmob-sdk：Bmob的android sdk包，包含了Bmob的数据存储、文件等服务，以下是最新的bmob-sdk:
+    //3.5.0：请务必查看下面注释[1]
+    compile 'cn.bmob.android:bmob-sdk:3.5.0'
+
+    //bmob-push：Bmob的推送包
+    compile 'cn.bmob.android:bmob-push:0.8'
+
+
+    //如果你想应用能够兼容Android6.0，请添加此依赖(org.apache.http.legacy.jar)
+    compile 'cn.bmob.android:http-legacy:1.0'
+
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile project(path: ':cardview')
+}

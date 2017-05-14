@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:padding="24dip">
+
+    <LinearLayout
+        android:id="@+id/view_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_selector_border"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:padding="12dip"
+            android:singleLine="true"
+            android:textColor="#080808"
+            android:textSize="17dip"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.2px"
+            android:background="#B7C5CB"/>
+
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dip"
+            android:padding="12dip"
+            android:textColor="#485B67"
+            android:textSize="16dip"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:paddingBottom="4dip"
+            android:paddingRight="16dip">
+
+            <TextView
+                android:id="@+id/dialog_btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:layout_toLeftOf="@+id/dialog_btn_confirm"
+                android:background="@drawable/dialog_selector_btn"
+                android:gravity="center"
+                android:paddingBottom="8dip"
+                android:paddingLeft="14dip"
+                android:paddingRight="14dip"
+                android:paddingTop="8dip"
+                android:text="取消"
+                android:textColor="#3CCD9C"
+                android:textSize="15dip"/>
+
+            <TextView
+                android:id="@+id/dialog_btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/dialog_selector_btn"
+                android:gravity="center"
+                android:paddingBottom="8dip"
+                android:paddingLeft="14dip"
+                android:paddingRight="14dip"
+                android:paddingTop="8dip"
+                android:text="确定"
+                android:textColor="#3CCD9C"
+                android:textSize="15dip"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

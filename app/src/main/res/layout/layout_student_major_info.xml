@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_student_major_info"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/ll_select_major"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/music_sign_item_height"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_click_item_white"
+        >
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal"
+            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+            android:textSize="@dimen/music_sign_text_size"
+            android:text="报考专业"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/music_sign_text_margin_left"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_click_item_white"
+                >
+            <TextView
+                android:id="@+id/tv_select_major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_black"
+                android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+                android:textSize="@dimen/music_sign_text_size"
+                android:text="请选择"
+                />
+            <ImageView
+                android:layout_width="@dimen/margin_20"
+                android:layout_height="@dimen/margin_20"
+                android:src="@drawable/ic_arrow_right"
+                />
+                </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_line_margin" />
+
+
+    <!--报考级别-->
+
+    <LinearLayout
+        android:id="@+id/ll_select_class"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/music_sign_item_height"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_click_item_white"
+        >
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal"
+            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+            android:textSize="@dimen/music_sign_text_size"
+            android:text="报考级别"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/music_sign_text_margin_left"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_click_item_white"
+                >
+            <TextView
+                android:id="@+id/tv_select_class"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_black"
+                android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+                android:textSize="@dimen/music_sign_text_size"
+                android:text="请选择"
+                />
+            <ImageView
+                android:layout_width="@dimen/margin_20"
+                android:layout_height="@dimen/margin_20"
+                android:src="@drawable/ic_arrow_right"
+                />
+                </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_line_margin" />
+
+    <!--考级曲目一-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/music_sign_item_height"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal"
+            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+            android:textSize="@dimen/music_sign_text_size"
+            android:text="考级曲目一"
+            />
+        <EditText
+            android:id="@+id/et_content1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/music_sign_text_margin_left"
+            android:background="@null"
+            android:textSize="@dimen/music_sign_text_size"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_line_margin" />
+    <!--考级曲目二-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/music_sign_item_height"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal"
+            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+            android:textSize="@dimen/music_sign_text_size"
+            android:text="考级曲目二"
+            />
+        <EditText
+            android:id="@+id/et_content2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/music_sign_text_margin_left"
+            android:background="@null"
+            android:textSize="@dimen/music_sign_text_size"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_line_margin" />
+
+    <!--考级曲目三-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/music_sign_item_height"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal"
+            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+            android:textSize="@dimen/music_sign_text_size"
+            android:text="考级曲目三"
+            />
+        <EditText
+            android:id="@+id/et_content3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/music_sign_text_margin_left"
+            android:background="@null"
+            android:textSize="@dimen/music_sign_text_size"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_line_margin" />
+
+    <!--考级曲目四-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/music_sign_item_height"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal"
+            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+            android:textSize="@dimen/music_sign_text_size"
+            android:text="考级曲目四"
+            />
+        <EditText
+            android:id="@+id/et_content4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/music_sign_text_margin_left"
+            android:background="@null"
+            android:textSize="@dimen/music_sign_text_size"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_line_margin" />
+
+
+
+</LinearLayout>

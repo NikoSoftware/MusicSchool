@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity">
+
+    <include layout="@layout/layout_appbar_main"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_4"
+                android:paddingRight="@dimen/margin_4"
+                android:paddingTop="@dimen/margin_4"
+                android:weightSum="3">
+
+                <include
+                    android:id="@+id/model_video"
+                    layout="@layout/item_main_model"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"/>
+
+                <View
+                    android:layout_width="@dimen/margin_4"
+                    android:layout_height="match_parent"/>
+
+                <include
+                    android:id="@+id/model_educating_room"
+                    layout="@layout/item_main_model"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_4"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:weightSum="28">
+
+                    <include
+                        android:id="@+id/model_music_teaching"
+                        layout="@layout/item_main_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="15"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_4"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="13"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <include
+                            android:id="@+id/model_music_level"
+                            layout="@layout/item_main_model"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <View
+                            android:layout_width="@dimen/margin_4"
+                            android:layout_height="match_parent"/>
+
+                        <include
+                            android:id="@+id/model_music_competition"
+                            layout="@layout/item_main_model"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/margin_4"
+                    android:layout_height="match_parent"/>
+
+                <include
+                    android:id="@+id/model_music_kinds"
+                    layout="@layout/item_main_model"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

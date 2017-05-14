@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_shortcut_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/layout_appbar_normal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/margin_16"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_12"
+            android:paddingLeft="@dimen/margin_16"
+            android:singleLine="true"
+            android:text="为了保护您的账号安全，请绑定手机号"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_15"/>
+
+        <TextView
+            android:id="@+id/tv_get_verify_code"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/item_50"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_notice"
+            android:background="@drawable/selector_bg_text_btn"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_24"
+            android:paddingRight="@dimen/margin_24"
+            android:text="获取验证码"
+            android:textColor="@drawable/selector_text_primary_blue"
+            android:textSize="@dimen/text_size_16"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_50"
+            android:layout_alignTop="@+id/tv_get_verify_code"
+            android:layout_toLeftOf="@+id/tv_get_verify_code"
+            android:background="@drawable/shape_bg_text_normal"
+            android:gravity="center|left"
+            android:hint="请输入您的手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/margin_24"
+            android:textColor="@color/text_normal"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size_17"/>
+
+        <EditText
+            android:id="@+id/et_verify_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_50"
+            android:layout_below="@+id/et_phone"
+            android:background="@drawable/shape_bg_text_normal"
+            android:gravity="center|left"
+            android:hint="请输入短信验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="@dimen/margin_24"
+            android:textColor="@color/text_normal"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size_17"/>
+
+        <TextView
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_50"
+            android:layout_below="@+id/et_verify_code"
+            android:layout_marginLeft="@dimen/margin_24"
+            android:layout_marginRight="@dimen/margin_24"
+            android:layout_marginTop="@dimen/margin_24"
+            android:background="@drawable/selector_btn"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20"/>
+
+        <LinearLayout
+            android:id="@+id/view_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_next"
+            android:layout_marginTop="@dimen/margin_16"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_24"
+            android:paddingRight="@dimen/margin_24">
+
+            <cn.sanfast.zhuoer.student.view.CheckImageView
+                android:id="@+id/civ_check"
+                android:layout_width="@dimen/icon_size_20"
+                android:layout_height="@dimen/icon_size_20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_6"
+                android:text="我已阅读并同意"
+                android:textColor="@color/text_tips"
+                android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                android:id="@+id/tv_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《卓儿音乐学堂服务协议》"
+                android:textColor="@drawable/selector_text_normal_blue"
+                android:textSize="@dimen/text_size_14"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

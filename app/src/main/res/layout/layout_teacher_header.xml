@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/id_stickynavlayout_topview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/view_teacher_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_144">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shape_image_default"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/translucent"/>
+
+        <cn.sanfast.xmutils.bitmap.view.CircleImageView
+            android:id="@+id/civ_avatar"
+            android:layout_width="@dimen/icon_size_64"
+            android:layout_height="@dimen/icon_size_64"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:layout_marginLeft="@dimen/margin_16"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icon_size_64"
+            android:layout_alignTop="@+id/civ_avatar"
+            android:layout_toRightOf="@+id/civ_avatar"
+            android:paddingLeft="@dimen/margin_12"
+            android:paddingRight="@dimen/margin_16">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_17"/>
+
+            <ImageView
+                android:id="@+id/iv_gender"
+                android:layout_width="@dimen/icon_size_16"
+                android:layout_height="@dimen/icon_size_16"
+                android:layout_marginLeft="@dimen/margin_4"
+                android:layout_marginTop="@dimen/margin_2"
+                android:layout_toRightOf="@+id/tv_name"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/iv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/icon_size_16"
+                android:layout_marginLeft="@dimen/margin_6"
+                android:layout_marginTop="@dimen/margin_2"
+                android:layout_toRightOf="@+id/iv_gender"/>
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_15"/>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/iv_arrow_right"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_15"/>
+
+            <ImageView
+                android:id="@+id/iv_arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/icon_size_18"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:src="@drawable/ic_arrow_right_white"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_50"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16">
+
+        <TextView
+            android:id="@+id/tv_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="老师简介"
+            android:textColor="@color/text_right"
+            android:textSize="@dimen/text_size_16"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_8"
+        android:lineSpacingExtra="5dip"
+        android:textColor="@color/text_normal_dark"
+        android:textSize="@dimen/text_size_15"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_10"
+        android:background="@color/activity"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_50"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="课程信息"
+            android:textColor="@color/text_right"
+            android:textSize="@dimen/text_size_16"/>
+
+        />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_8"
+        android:lineSpacingExtra="5dip"
+        android:textColor="@color/text_normal_dark"
+        android:textSize="@dimen/text_size_15"/>
+
+
+</LinearLayout>

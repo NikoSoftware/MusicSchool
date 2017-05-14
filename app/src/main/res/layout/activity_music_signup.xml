@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activtity_music_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    >
+
+    <include layout="@layout/layout_appbar_normal" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+        <!--个人注册信息-->
+        <include layout="@layout/layout_student_signup_info" />
+        <!--学生专业信息-->
+        <include layout="@layout/layout_student_major_info" />
+
+
+            <!--联系人信息-->
+        <include layout="@layout/layout_contact_info"/>
+
+            <!--指导老师信息-->
+        <include layout="@layout/layout_grade_teacher_info"/>
+
+            <!--条款-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/music_sign_item_height"
+                android:orientation="horizontal"
+                android:background="@color/hint_grey"
+                android:gravity="center_vertical"
+                >
+                <cn.sanfast.xmutils.view.CheckImageView
+                    android:id="@+id/rb_agree"
+                    android:padding="10dp"
+                    android:layout_width="@dimen/margin_40"
+                    android:layout_height="@dimen/margin_40"
+                    />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/music_sign_text_size"
+                    android:text="我已经阅读并同意"
+                    />
+                <TextView
+                    android:id="@+id/tv_provision"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/music_sign_text_size"
+                    android:text="《条款内容》"
+                    />
+
+            </LinearLayout>
+            <include layout="@layout/layout_bottom_line_fill" />
+        <Button xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_gravity="bottom"
+            android:id="@+id/sign_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:background="@drawable/selector_bg_order_pay_noc"
+            android:textColor="@color/white"
+            android:text="确认提交"
+            android:textSize="@dimen/icon_size_18"
+            />
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

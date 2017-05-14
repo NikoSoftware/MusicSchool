@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_contact_info"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/music_sign_item_height"
+        android:orientation="horizontal"
+        android:background="@color/hint_grey"
+        >
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+            android:textSize="@dimen/music_sign_text_size"
+            android:text="联系人信息"
+            />
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_line_fill" />
+
+    <LinearLayout
+        android:id="@+id/ll_select_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/selector_click_item_transparent"
+        >
+
+    <!--联系人姓名   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/music_sign_text_margin_left"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal"
+            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+            android:textSize="@dimen/music_sign_text_size"
+            android:text="联系人姓名"
+            />
+        <EditText
+            android:id="@+id/et_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/music_sign_text_margin_left"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/music_sign_text_size"
+            />
+    </LinearLayout>
+
+    <!--手机号码   -->
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/music_sign_text_margin_left"
+        >
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal"
+            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+            android:textSize="@dimen/music_sign_text_size"
+            android:text="手机号码"
+            />
+        <EditText
+            android:id="@+id/et_contact_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_phone"
+            android:background="@null"
+            android:paddingLeft="@dimen/music_sign_text_margin_left"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:maxLength="11"
+            android:text=""
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/music_sign_text_size"
+            />
+<!--        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/margin_20"
+            android:layout_height="@dimen/margin_20"
+            android:src="@drawable/ic_arrow_right"
+            />-->
+
+    </RelativeLayout>
+
+
+    <!--手机号码   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal"
+            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+            android:textSize="@dimen/music_sign_text_size"
+            android:text="联系地址"
+            />
+        <EditText
+            android:id="@+id/et_contact_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/music_sign_text_margin_left"
+            android:layout_marginRight="36dp"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/music_sign_text_size"
+            />
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_line_margin" />
+
+    </LinearLayout>
+
+    <!--准考证-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/music_sign_item_height"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/music_sign_text_margin_left"
+        >
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal"
+            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+            android:textSize="@dimen/music_sign_text_size"
+            android:text="准考证领取方式"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="6dp"
+            android:gravity="center_vertical"
+            android:text="自取"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            />
+        <cn.sanfast.xmutils.view.CheckImageView
+            android:id="@+id/civ_check_1"
+            android:padding="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_4"
+            android:text="快递邮寄(货到付款)"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            />
+        <cn.sanfast.xmutils.view.CheckImageView
+            android:id="@+id/civ_check_2"
+            android:padding="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            />
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_line_fill" />
+
+
+
+
+</LinearLayout>

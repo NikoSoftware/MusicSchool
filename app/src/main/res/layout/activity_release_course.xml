@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_collection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    >
+
+    <include layout="@layout/layout_appbar_normal" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginBottom="@dimen/margin_50"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/music_sign_item_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal"
+                    android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+                    android:textSize="@dimen/music_sign_text_size"
+                    android:text="课程名称："
+                    />
+                <EditText
+                    android:id="@+id/ed_st_cname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/music_sign_text_margin_left"
+                    android:maxLength="15"
+                    android:background="@null"
+                    android:hint="请输入"
+                    android:textColorHint="@color/hint_text_grey"
+                    android:textSize="@dimen/music_sign_text_size"
+                    />
+            </LinearLayout>
+            <include  layout="@layout/layout_bottom_line_margin"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/music_sign_item_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal"
+                    android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+                    android:textSize="@dimen/music_sign_text_size"
+                    android:text="教学地址："
+                    />
+                <EditText
+                    android:id="@+id/ed_adress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/music_sign_text_margin_left"
+                    android:maxLength="15"
+                    android:background="@null"
+                    android:hint="请输入"
+                    android:textColorHint="@color/hint_text_grey"
+                    android:textSize="@dimen/music_sign_text_size"
+                    />
+            </LinearLayout>
+            <include  layout="@layout/layout_bottom_line_margin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/music_sign_item_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal"
+                    android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+                    android:textSize="@dimen/music_sign_text_size"
+                    android:text="课程价格："
+                    />
+                <EditText
+                    android:id="@+id/ed_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/music_sign_text_margin_left"
+                    android:maxLength="15"
+                    android:background="@null"
+                    android:hint="请输入价格（元）"
+                    android:inputType="number"
+                    android:maxEms="5"
+                    android:textColorHint="@color/hint_text_grey"
+                    android:textSize="@dimen/music_sign_text_size"
+                    />
+            </LinearLayout>
+            <include  layout="@layout/layout_bottom_line_margin"/>
+
+            <LinearLayout
+                android:id="@+id/ll_select_major"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/music_sign_item_height"
+                android:orientation="horizontal"
+                android:background="@drawable/selector_click_item_white"
+                >
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal"
+                    android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+                    android:textSize="@dimen/music_sign_text_size"
+                    android:text="对应专业"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/music_sign_text_margin_left"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/selector_click_item_white"
+                        >
+                        <TextView
+                            android:id="@+id/tv_select_major"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_black"
+                            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+                            android:textSize="@dimen/music_sign_text_size"
+                            android:text="请选择"
+                            />
+                        <ImageView
+                            android:layout_width="@dimen/margin_20"
+                            android:layout_height="@dimen/margin_20"
+                            android:src="@drawable/ic_arrow_right"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <include layout="@layout/layout_bottom_line_margin" />
+
+            <!--出生日期-->
+
+            <LinearLayout
+                android:id="@+id/ll_select_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/music_sign_item_height"
+                android:orientation="horizontal"
+                android:background="@drawable/selector_click_item_white"
+                >
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal"
+                    android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+                    android:textSize="@dimen/music_sign_text_size"
+                    android:text="课程年月"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/music_sign_text_margin_left"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        >
+                        <TextView
+                            android:id="@+id/tv_select_time"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_black"
+                            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+                            android:textSize="@dimen/music_sign_text_size"
+                            android:text="请选择"
+                            />
+                        <ImageView
+                            android:layout_width="@dimen/margin_20"
+                            android:layout_height="@dimen/margin_20"
+                            android:src="@drawable/ic_arrow_right"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <include layout="@layout/layout_bottom_line_margin" />
+
+            <LinearLayout
+                android:id="@+id/ll_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/music_sign_item_height"
+                android:orientation="horizontal"
+                android:background="@drawable/selector_click_item_white"
+                >
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal"
+                    android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+                    android:textSize="@dimen/music_sign_text_size"
+                    android:text="起始时间"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/music_sign_text_margin_left"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        >
+                        <TextView
+                            android:id="@+id/tv_start_time"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_black"
+                            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+                            android:textSize="@dimen/music_sign_text_size"
+                            android:text="请选择"
+                            />
+                        <ImageView
+                            android:layout_width="@dimen/margin_20"
+                            android:layout_height="@dimen/margin_20"
+                            android:src="@drawable/ic_arrow_right"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <include layout="@layout/layout_bottom_line_margin" />
+            <LinearLayout
+                android:id="@+id/ll_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/music_sign_item_height"
+                android:orientation="horizontal"
+                android:background="@drawable/selector_click_item_white"
+                >
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal"
+                    android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+                    android:textSize="@dimen/music_sign_text_size"
+                    android:text="结束时间"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/music_sign_text_margin_left"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        >
+                        <TextView
+                            android:id="@+id/tv_end_time"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_black"
+                            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+                            android:textSize="@dimen/music_sign_text_size"
+                            android:text="请选择"
+                            />
+                        <ImageView
+                            android:layout_width="@dimen/margin_20"
+                            android:layout_height="@dimen/margin_20"
+                            android:src="@drawable/ic_arrow_right"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <include layout="@layout/layout_bottom_line_margin" />
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sign_button"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_marginTop="@dimen/margin_30"
+        android:background="@drawable/selector_bg_order_pay_noc"
+        android:textColor="@color/white"
+        android:text="发布"
+        android:textSize="@dimen/icon_size_18"
+        />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.niko.musicschool">
+
+    <!--允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--获取sd卡写的权限，用于文件上传和下载-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许读取手机状态 用于创建BmobInstallation-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+    <application
+        android:name=".activity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_about"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_about"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.main.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--  home -->
+
+        <activity
+            android:name=".activity.main.LoginActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.Login"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity
+            android:name=".activity.main.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.Login"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!--  home -->
+        <activity
+            android:name=".activity.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity
+            android:name=".activity.main.SetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".activity.main.AccountManageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".activity.main.UpdateNicknameActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".activity.teacher.MusicTeachingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+        android:name=".activity.teacher.TeacherActivtiy"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity
+            android:name=".activity.order.OrderManageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity
+            android:name=".activity.teacher.TeacherOrderInfoActivtiy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity
+            android:name=".activity.exam.MusicSignUpActivtiy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity
+            android:name=".activity.exam.MusicGradeDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity
+            android:name=".activity.video.VideoListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+
+        <activity
+            android:name=".activity.picture.PictureActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity android:name=".activity.video.VideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            ></activity>
+        <activity android:name=".activity.course.ReleaseCourseActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            ></activity>
+
+        <activity android:name=".activity.order.TeacherOrderListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            ></activity>
+
+    </application>
+
+</manifest>

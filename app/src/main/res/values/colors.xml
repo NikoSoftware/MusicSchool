@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3CCD9C</color>
+    <color name="colorPrimaryAlpha">#663CCD9C</color>
+    <color name="colorPrimaryAlphaDark">#783CCD9C</color>
+    <color name="colorPrimaryDark">#03bc8b</color>
+
+    <color name="activity">#EFF4F6</color>
+
+    <color name="music_teaching">#8F83BF</color>
+    <color name="music_teaching_onfocus">#8E74B0</color>
+    <color name="main_teacher_course">#8F84C0</color>
+
+    <color name="music_kinds">#F56679</color>
+    <color name="music_kinds_onfocus">#FC586C</color>
+    <color name="main_teacher_announce">#FD687C</color>
+
+    <color name="educating_room">#61C5DE</color>
+    <color name="educating_room_onfocus">#51B6CF</color>
+
+    <color name="music_level">#EFB613</color>
+    <color name="music_level_onfocus">#F4A603</color>
+    <color name="main_teacher_order">#F4B613</color>
+
+    <color name="music_competition">#96CF22</color>
+    <color name="music_competition_onfocus">#91BF00</color>
+    <color name="main_teacher_student">#92CF10</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#2196F3</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#60000000</color>
+    <color name="tab_grey">#EFF3F6</color>
+
+    <color name="line">#B7C5CB</color>
+
+    <color name="item_pressed">#DFDFDF</color>
+
+    <color name="disable">#EFEFEF</color>
+
+
+    <color name="text_normal_dark">#080808</color>
+    <color name="text_normal_dark_light">#383838</color>
+    <color name="text_normal">#485B67</color>
+    <color name="text_normal_light">#525F6A</color>
+    <color name="text_right">#90A1AC</color>
+    <color name="text_hint">#B7C7CE</color>
+    <color name="text_tips">#8ea1ac</color>
+    <color name="text_tip">#8ea1ac</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_money">#F88F00</color>
+    <color name="text_moneyDark">#FB8205</color>
+    <color name="text_moneyBlack">#B9621C</color>
+    <color name="text_time">#8F989C</color>
+    <color name="text_alert">#E73734</color>
+    <color name="text_navigation_phone">#D3F2E7</color>
+    <color name="order_header">#FEF3BC</color>
+    <color name="text_shadowmoney">#FFF2BB</color>
+    <color name="text_black">#272727</color>
+    <!--<color name="grey">#8A9B9D</color>-->
+    <color name="grey">#B7C5CB</color>
+    <color name="hint_grey">#EFF3F6</color>
+    <!--  hint_text_grey">#C7C5CA -->
+    <color name="hint_text_grey">#8EA1AC</color>
+
+    <color name="teach_info_text_hint">#8EA1AC</color>
+
+</resources>

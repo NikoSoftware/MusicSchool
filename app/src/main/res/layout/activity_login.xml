@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/margin_32"
+            android:paddingLeft="@dimen/margin_24"
+            android:paddingRight="@dimen/margin_24"
+            android:paddingTop="@dimen/margin_32">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/icon_size_140"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_24"
+                android:src="@drawable/ic_logo"/>
+
+            <RelativeLayout
+                android:id="@+id/item_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_40"
+                android:layout_below="@+id/iv_logo"
+                android:layout_marginTop="@dimen/margin_32">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_22"
+                    android:layout_height="@dimen/icon_size_22"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_username"/>
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:background="@null"
+                    android:gravity="center|left"
+                    android:hint="请输入注册手机号"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/text_size_17"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/item_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_40"
+                android:layout_below="@+id/item_phone"
+                android:layout_marginTop="@dimen/margin_16">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_22"
+                    android:layout_height="@dimen/icon_size_22"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_password"/>
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:background="@null"
+                    android:gravity="center|left"
+                    android:hint="请输入登录密码"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/text_size_17"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_50"
+                android:layout_below="@+id/item_password"
+                android:layout_marginTop="@dimen/margin_24"
+                android:background="@drawable/selector_btn"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20"/>
+
+            <TextView
+                android:id="@+id/tv_shortcut_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_login"
+                android:layout_marginTop="@dimen/margin_24"
+                android:singleLine="true"
+                android:text="注册"
+                android:textColor="@drawable/selector_text_primary_blue"
+                android:textSize="@dimen/text_size_16"/>
+
+            <TextView
+                android:id="@+id/tv_find_back_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv_shortcut_login"
+                android:singleLine="true"
+                android:text="找回密码"
+                android:textColor="@drawable/selector_text_primary_blue"
+                android:textSize="@dimen/text_size_16"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

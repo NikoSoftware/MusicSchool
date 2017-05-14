@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_cancel_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_popup"
+        android:background="@null"/>
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_top"
+            style="@style/popup_window_item_style"
+            android:background="@drawable/selector_popup_window_button_top"/>
+
+        <ImageView
+            android:id="@+id/iv_line_top"
+            style="@style/line_light_gray"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"/>
+
+        <Button
+            android:id="@+id/btn_one"
+            style="@style/popup_window_item_style"
+            android:background="@drawable/selector_popup_window_button_center"/>
+
+        <ImageView
+            android:id="@+id/iv_line_one"
+            style="@style/line_light_gray"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"/>
+
+        <Button
+            android:id="@+id/btn_two"
+            style="@style/popup_window_item_style"
+            android:background="@drawable/selector_popup_window_button_center"/>
+
+        <ImageView
+            android:id="@+id/iv_line_two"
+            style="@style/line_light_gray"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"/>
+
+        <Button
+            android:id="@+id/btn_bottom"
+            style="@style/popup_window_item_style"
+            android:background="@drawable/selector_popup_window_button_bottom"/>
+
+        <Button
+            android:id="@+id/btn_cancel_bottom"
+            style="@style/popup_window_item_style"
+            android:layout_margin="8dip"
+            android:background="@drawable/selector_popup_window_button_single"
+            android:text="取消"
+            android:textColor="#ff0676ff"/>
+    </LinearLayout>
+
+</RelativeLayout>

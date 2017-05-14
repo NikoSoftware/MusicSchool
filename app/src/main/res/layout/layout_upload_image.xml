@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_upload_image"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--考生照片-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/music_sign_item_height"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_image_title"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal"
+            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+            android:textSize="@dimen/music_sign_text_size"
+            android:text="参赛者照片 （二寸彩色证件照）"
+            />
+    </LinearLayout>
+
+    <!--报考照片图片-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/iv_portrait"
+            android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+            android:layout_width="106dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"
+            android:background="@color/hint_grey"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/music_sign_text_margin_left"
+            >
+            <LinearLayout
+                android:id="@+id/ll_portrait"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_50"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_click_item_transparent"
+                >
+            <TextView
+                android:id="@+id/tv_portrait"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_black"
+                android:layout_marginLeft="@dimen/music_sign_text_margin_left"
+                android:textSize="@dimen/music_sign_text_size"
+                android:text="上传照片"
+                />
+            <ImageView
+                android:layout_width="@dimen/margin_20"
+                android:layout_height="@dimen/margin_20"
+                android:src="@drawable/ic_arrow_right"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/black</item>
+        <item name="android:listDivider">@drawable/shape_divider_transparent</item>
+
+    </style>
+
+    <style name="AppTheme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:listDivider">@drawable/shape_divider_transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/black</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- MainActivity Theme -->
+    <style name="AppTheme.Main" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/black</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <!-- VideoPlayActivity -->
+    <style name="AppTheme.VideoPlay" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/black</item>
+        <item name="android:listDivider">@drawable/shape_divider_transparent</item>
+    </style>
+
+    <!-- 避免第一次进来白屏或黑屏，在Manifest中设置SplashActivity的主题 -->
+    <style name="AppTheme.Splash">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="AppTheme.Splash.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.Login">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/black</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.WeChat">
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/black</item>
+    </style>
+
+    <!-- banner style -->
+    <style name="BannerStyle">
+        <!-- 自定义属性在styles.xml中不需要命名空间,直接用属性名就可以了 -->
+        <!-- 开启自动轮播 -->
+        <item name="banner_pointAutoPlayAble">true</item>
+        <!-- 自动轮播的时间间隔 -->
+        <item name="banner_pointAutoPlayInterval">4000</item>
+        <!-- 页面切换的动画效果 -->
+        <item name="banner_transitionEffect">accordion</item>
+        <!-- 只有一页时是否显示指示器 -->
+        <item name="banner_isNeedShowIndicatorOnOnlyOnePage">false</item>
+        <!-- 指示点容器背景 -->
+        <item name="banner_pointContainerBackground">@android:color/transparent</item>
+        <!-- 指示点背景 -->
+        <item name="banner_pointDrawable">@drawable/selector_indicator</item>
+        <!-- 指示点容器左右内间距 -->
+        <item name="banner_pointContainerLeftRightPadding">8dip</item>
+        <!-- 指示点上下外间距 -->
+        <item name="banner_pointTopBottomMargin">6dip</item>
+        <!-- 指示点左右外间距 -->
+        <item name="banner_pointLeftRightMargin">6dip</item>
+        <!-- 指示器的位置 -->
+        <item name="banner_indicatorGravity">bottom|center_horizontal</item>
+        <!-- 页码切换过程的时间长度 -->
+        <item name="banner_pageChangeDuration">800</item>
+        <!-- 提示文案的文字大小 -->
+        <item name="banner_tipTextSize">12dip</item>
+        <!-- 提示文案的文字颜色 -->
+        <item name="banner_tipTextColor">@android:color/white</item>
+        <!-- 加载网络数据时覆盖在BGABanner最上层的占位图 -->
+        <item name="banner_placeholderDrawable">@null</item>
+    </style>
+
+    <style name="TabLayoutCustom" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabIndicatorHeight">2dip</item>
+        <item name="tabPaddingStart">16dip</item>
+        <item name="tabPaddingEnd">16dip</item>
+        <item name="tabBackground">@color/transparent</item>
+        <item name="tabTextAppearance">@style/TabTextAppearanceCustom</item>
+        <item name="tabSelectedTextColor">@color/text_normal</item>
+    </style>
+
+    <style name="TabTextAppearanceCustom" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">18dip</item>
+        <item name="android:textColor">@color/text_right</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+</resources>
