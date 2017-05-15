@@ -54,6 +54,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
             case R.id.btn_login:
 
                 if(checkRegister()){
+                    setCustomDialog();
                     UserModel bu = new UserModel();
                     bu.setUsername(mEtPhone.getText().toString());
                     bu.setPassword(mEtPassword.getText().toString().trim());
@@ -61,6 +62,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
                     bu.signUp(new SaveListener<BmobUser>() {
                         @Override
                         public void done(BmobUser s, BmobException e) {
+                            closeCustomDialog();
                             if(e==null){
                                 SharePerefenceTool.saveUser(mContext,mEtPassword.getText().toString().trim());
                                 showSnackbar("注册成功");

@@ -62,12 +62,14 @@ public class LoginActivity extends BaseActivity  implements View.OnClickListener
             case R.id.btn_login:
 
                 if(checkRegister()) {
+                    setCustomDialog();
                     UserModel bu = new UserModel();
                     bu.setUsername(mEtPhone.getText().toString().trim());
                     bu.setPassword(mEtPassword.getText().toString().trim());
                     bu.login(new SaveListener<UserModel>() {
                         @Override
                         public void done(UserModel s, BmobException e) {
+                            closeCustomDialog();
                             if (e == null) {
                                 SharePerefenceTool.saveUser(mContext,mEtPassword.getText().toString().trim());
                                 skip(mContext, MainActivity.class);

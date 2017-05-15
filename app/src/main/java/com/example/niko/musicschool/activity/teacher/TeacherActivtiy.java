@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.example.niko.musicschool.R;
 import com.example.niko.musicschool.activity.main.BaseActivity;
+import com.example.niko.musicschool.activity.order.OrderManageActivity;
 import com.example.niko.musicschool.control.appbar.AppbarNormalController;
 import com.example.niko.musicschool.model.CourseModel;
 import com.example.niko.musicschool.model.CourseOrderModel;
@@ -137,6 +138,7 @@ public class TeacherActivtiy extends BaseActivity {
                         public void done(String objectId, BmobException e) {
                             if(e==null){
                                 showSnackbar("预订成功：");
+                               skip(mContext, OrderManageActivity.class);
                                 finish();
                             }else{
                                 Log.i("bmob","失败："+e.getMessage()+","+e.getErrorCode());
