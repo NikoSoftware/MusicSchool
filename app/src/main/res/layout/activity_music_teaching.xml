@@ -18,12 +18,10 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 
-            <com.github.jdsjlzx.recyclerview.LRecyclerView
-                android:id="@+id/lrecycler_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
-            </com.github.jdsjlzx.recyclerview.LRecyclerView>
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:id="@+id/lrecycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.github.jdsjlzx.recyclerview.LRecyclerView>
 
 
     </LinearLayout>
