@@ -10,6 +10,8 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.nostra13.universalimageloader.core.download.BaseImageDownloader;
 
+import cn.bmob.v3.Bmob;
+
 /**
  * Created by zhouweilong on 16/5/28.
  */
@@ -18,6 +20,7 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        Bmob.initialize(this, "3a12b10f41310ff866c5519cee29386a");
         initImageLoader();
     }
 

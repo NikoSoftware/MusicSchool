@@ -30,7 +30,6 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mContext = this;
-        Bmob.initialize(this, "3a12b10f41310ff866c5519cee29386a");
         setLayout();
         initViews();
         setupViews();
