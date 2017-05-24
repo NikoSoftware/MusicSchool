@@ -23,7 +23,7 @@
   
   ![第一印象](http://i1.piimg.com/595259/de66824cdcde2bbet.jpg)
   
-  ![发布课程](http://i1.piimg.com/595259/051d8544ff3f7a0b.png)
+  ![发布课程](http://i1.piimg.com/595259/051d8544ff3f7a0bt.jpg)
   
   ![课程订单](http://i1.piimg.com/595259/978bf7cfa1d6bfc9t.jpg)
 
